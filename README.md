@@ -147,7 +147,6 @@ def load_data():
 # Define default arguments
 
 default_args = {
-
     'owner': 'airflow',
     
     'depends_on_past': False,
@@ -157,13 +156,11 @@ default_args = {
     'email_on_retry': False,
     
     'retries': 1,
-
 }
 
 # Define the DAG
 
 dag = DAG(
-
     'etl_dag',
     
     default_args=default_args,
@@ -173,7 +170,7 @@ dag = DAG(
     schedule_interval='@daily',
     
     start_date=days_ago(1),
-
+    
 )
 
 # Define tasks
