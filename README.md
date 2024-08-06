@@ -18,46 +18,46 @@ This project demonstrates an ETL (Extract, Transform, Load) process using Apache
 
 ### Installation
 
-Clone the repository:
+### Clone the repository:
 bash
 
 git clone https://github.com/yourusername/airflow-etl-project.git
 
 cd airflow-etl-project
 
-Create and activate a virtual environment:
+### Create and activate a virtual environment:
 bash
 
 python3 -m venv airflow_env
 
 source airflow_env/bin/activate
 
-Install the dependencies:
+### Install the dependencies:
 bash
 
 pip install -r requirements.txt
 
-Set the AIRFLOW_HOME environment variable:
+### Set the AIRFLOW_HOME environment variable:
 bash
 
 export AIRFLOW_HOME=$(pwd)/airflow
 
-Initialize the Airflow database:
+## Initialize the Airflow database:
 bash
 
 airflow db init
 
-Start the Airflow scheduler and web server:
+## Start the Airflow scheduler and web server:
 bash
 
 airflow scheduler &
 airflow webserver --port 8080
 
-Access the Airflow web UI:
+### Access the Airflow web UI:
 
 Open your browser and go to http://localhost:8080.
 
-ETL Process
+# ETL Process
 The ETL process is defined in the etl_dag.py file located in the dags directory. It consists of three main tasks:
 
 Extract: Fetch data from an API and save it as a CSV file.
@@ -66,7 +66,7 @@ Transform: Read the extracted data, perform transformations, and save the transf
 
 Load: Load the transformed data into an SQLite database.
 
-DAG File: etl_dag.py
+# DAG File: etl_dag.py
 python
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
