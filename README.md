@@ -52,7 +52,9 @@ ETL Process
 The ETL process is defined in the etl_dag.py file located in the dags directory. It consists of three main tasks:
 
 Extract: Fetch data from an API and save it as a CSV file.
+
 Transform: Read the extracted data, perform transformations, and save the transformed data.
+
 Load: Load the transformed data into an SQLite database.
 
 DAG File: etl_dag.py
