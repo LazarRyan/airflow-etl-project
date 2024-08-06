@@ -213,19 +213,19 @@ extract_task >> transform_task >> load_task
 
 Usage
 
-Trigger the DAG manually:
+# Trigger the DAG manually:
 
 In the Airflow web UI, go to the DAGs page, find etl_dag, and click the "Trigger DAG" button.
 
-Monitor the DAG run:
+# Monitor the DAG run:
 
 Monitor the progress and logs of each task in the Airflow web UI.
 
-Contributing
+# Contributing
 
 If you would like to contribute to this project, please open a pull request or issue on GitHub.
 
-License
+# License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
