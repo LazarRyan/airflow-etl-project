@@ -21,7 +21,7 @@ This project demonstrates an ETL (Extract, Transform, Load) process using Apache
 ### Clone the repository:
 bash
 
-git clone https://github.com/yourusername/airflow-etl-project.git
+git clone https://github.com/LazarRyan/airflow-etl-project.git
 
 cd airflow-etl-project
 
